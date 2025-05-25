@@ -1,7 +1,7 @@
-import { Socket } from 'net';
-import { AbstractSocketClient } from './abstract-socket-client';
-export declare class MobileSocketClient extends AbstractSocketClient {
-    protected socket: Socket | null;
+import WebSocket from 'ws';
+import { AbstractSocketClient } from './types';
+export declare class WebSocketClient extends AbstractSocketClient {
+    protected socket: WebSocket | null;
     get isOpen(): boolean;
     get isClosed(): boolean;
     get isClosing(): boolean;
