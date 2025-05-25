@@ -1,4 +1,3 @@
-import { proto } from '../WAProto';
 import makeWASocket from './Socket';
 export * from '../WAProto';
 export * from './Utils';
@@ -8,5 +7,5 @@ export * from './Defaults';
 export * from './WABinary';
 export * from './WAM';
 export type WASocket = ReturnType<typeof makeWASocket>;
-export { makeWASocket, proto };
+export { makeWASocket };
 export default makeWASocket;
